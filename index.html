@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Shop<span>Ease</span></a>
+
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart">My Cart <span id="cart-count">0</span></a>
+            <button id="orders-button" class="orders-button" type="button">
+                My Orders
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR EVERYDAY SHOPPING DESTINATION</p>
+            <h1>Find your next<br>favorite thing.</h1>
+            <p>Discover useful products at prices you'll love.</p>
+            <a href="#products" class="hero-button">Shop Now <span>→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <div class="hero-circle">🛍️</div>
+            <div class="floating-item item-one">🎧</div>
+            <div class="floating-item item-two">⌚</div>
+            <div class="floating-item item-three">🎒</div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section id="products" class="products-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
+                    <h2>Explore Products</h2>
+                    <p class="section-subtitle">Everyday essentials, all in one place.</p>
+                </div>
+                <span class="muted">8 products</span>
+            </div>
+
+            <div id="product-list" class="product-grid"></div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">READY WHEN YOU ARE</p>
+                    <h2>Your Shopping Cart</h2>
+                    <p class="section-subtitle">Review your items before checkout.</p>
+                </div>
+            </div>
+
+            <div class="cart-layout">
+                <div id="cart-items" class="cart-items">
+                    <p class="empty-cart">Your cart is empty. Start shopping!</p>
+                </div>
+
+                <aside class="summary">
+                    <h3>Order Summary</h3>
+
+                    <div class="discount-form">
+                        <label for="discount-code">Discount code</label>
+                        <div class="discount-row">
+                            <input
+                                type="text"
+                                id="discount-code"
+                                placeholder="Try SAVE10"
+                                autocomplete="off"
+                            >
+                            <button id="apply-discount" type="button">Apply</button>
+                        </div>
+                        <p id="discount-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span id="discount">-$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (8%)</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <strong>Total</strong>
+                        <strong id="total">$0.00</strong>
+                    </div>
+
+                    <button id="checkout-button" class="checkout-button" type="button">
+                        Place Demo Order
+                    </button>
+                    <p class="checkout-note">
+                        Demo only. No real payment is collected.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="orders" class="orders-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR PURCHASE HISTORY</p>
+                    <h2>My Orders</h2>
+                    <p class="section-subtitle">View the demo orders you have placed.</p>
+                </div>
+            </div>
+
+            <div id="orders-list">
+                <p class="empty-cart">You haven't placed any orders yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home" class="logo footer-logo">Shop<span>Ease</span></a>
+        <p>© 2026 ShopEase. Made for a better shopping experience.</p>
+        <p class="footer-note">Demo shopping website — no real purchases or payments.</p>
+    </footer>
+
+</body>
+</html>
